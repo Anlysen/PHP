@@ -8,8 +8,8 @@ class People {
     public $germans;
 }
 
-$rus->russian = "Rus";
-echo "$russian";
+echo "Rus";
+
 
 class Animals {
     public $tiger;
@@ -19,6 +19,9 @@ class Animals {
     public $panda;
 }
 
+echo "<br>";
+echo "Zebra";
+
 class Planet {
     public $earth;
     public $mars;
@@ -26,5 +29,8 @@ class Planet {
     public $venus;
     public $jupiter;
 }
+
+echo "<br>";
+echo "Venus";
 
 ?>

@@ -4,29 +4,26 @@
 class SomePeople {
     public $age; // public используется для задания области видимости переменных
     public $name;
+    public static $people = 1; // Статическая переменная класса
 }
 // Классы с одинаковыми названием ставить нельзя, выдаст ошибку
 
-$nick = new SomePeople;
-$nick->age = 30;
-$nick->name = "Nick";
 
-// echo $nick->name;
-// unset($nick);
-// $dasha = new SomePeople();
-// $nick = 11;
-// С этого момента nick уже не nick, а переменная
+// echo SomePeople::$people;
+$tim = new SomePeople();
+$tim->age = 33;
+echo $tim->age;
 
-class location {
-    public $x;
-    private $y;
-    public $z;
-}
+$bob = $tim;
+$tim->age = 35;
+echo $bob->age;
 
-$loc = new Location();
-$loc->x = 23.22;
-$loc->z = 54.23;
+$fir = $sec = 3;
+$fir = 4;
 
+// echo $fir;
+// echo "<br>";
+// echo $sec;
 
 
 ?>
