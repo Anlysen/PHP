@@ -69,25 +69,41 @@ class Animal {
 
 $cl = new Animal;
 $cl->a = "First";
-echo $cl->a;
+// echo $cl->a;
 
 $ora = new Animal;
 $ora->c = "Orange";
-echo "<br>";
-echo $ora->c;
+// echo "<br>";
+// echo $ora->c;
 
 $blue = $ora;
 $ora->c = "Blue";
-echo "<br>";
-echo $blue->c;
+// echo "<br>";
+// echo $blue->c;
 
 $ora->c = "Red";
-echo "<br>";
-echo $blue->c;
+// echo "<br>";
+// echo $blue->c;
 
 
 $km = new Animal;
 $km->d = "100km/h";
-echo "<br>";
-echo $km->d;
+// echo "<br>";
+// echo $km->d;
+
+require_once __DIR__ . '/second.php';
+
+class ConsClass{
+    const NAME = "Вывести cons";
+}
+echo ConsClass::NAME;
+echo "<hr>";
+
+class DiscountedGoods{
+    const NAME = "Уцененный товар интернет магазина OZON";
+}
+echo DiscountedGoods::NAME;
+echo "<hr>";
+
+
 ?>

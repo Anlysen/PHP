@@ -1,4 +1,4 @@
-<?php
+// <?php
 // public, private, protected - спецификаторы доступа
 
 // Класс-1
@@ -76,7 +76,8 @@ PHP_EOL - Символ конца строки, для Windows \n, для Linux 
 // echo "File name" . __FILE__ . "<br>";
 // echo __DIR__;
 
-echo "Подключаемый файл";
-echo "<hr>";
+// echo "Подключаемый файл";
+// echo "<hr>";
+
 
 ?> 
