@@ -1,31 +1,46 @@
 <?php
 
-$var = "some text";
+// Операторы
+// Конкатынация или обьединение строк
+
+$str1 = "Хорошо, что я учу";
+$str2 = "PHP";
 $num = 123;
+$num2 = 321;
 
-// isset() empty()
+$str = $str1 . $str2;
+$nums = $num2 . $num;
+// $num .= $num2;
 
-$status = isset($var, $num, $ppp); // если переменная есть = true
+// echo $num2, $num, $str1, $str2;
+// echo $nums;
 
-// если нет переменной, пустая строка, "0", null, false = true
-$status2 = empty($num); 
+// Арифметические операторы
 
-$str = "0";
-// проверка существования переменной
-if (isset($str)){
-    // echo "Переменная $str существует" . "<br>";
-}
-if (empty($str)){
-    // echo "Переменная $str пустая" . "<br>";
-}
-// Определяет тип переменной
-$flo = 121.35;
-// echo is_int($flo);
+// echo (4 + 3) * (21 - 7);
+// intval() внутрь то, что хотим сделать целочисленным значением
+// echo (int)(5 / 3);
 
-// echo gettype($flo);
+// echo 1 % 2; // Число получается не четное
+// echo 6 % 2; // Число четное
+// echo 111 % 2; // 0 - счетное, 1 - несчетное
+
 /*
-Типы данных : boolean, integer, double, string, array, object, resource, null, unknown type
+$number = 5353;
+if ($number % 2) {
+    echo "Число в переменной: $number не четное";
+}else{
+    echo "Число в переменной: $number четное";
+}
 */
 
+
+
+// Инкремент и декремент
+
+$number = 111;
+$var = 222;
+
+echo $number ** $var;
 
 ?>

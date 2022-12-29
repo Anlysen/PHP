@@ -1,5 +1,6 @@
 <?php
 
+// Первое Д/З
 class People {
     public $chinese;
     public $russian;
@@ -67,6 +68,9 @@ class Animal {
     public $e;
 }
 
+
+// Второе Д/З
+
 $cl = new Animal;
 $cl->a = "First";
 // echo $cl->a;
@@ -91,19 +95,58 @@ $km->d = "100km/h";
 // echo "<br>";
 // echo $km->d;
 
-require_once __DIR__ . '/second.php';
+// require_once __DIR__ . '/second.php';
 
 class ConsClass{
     const NAME = "Вывести cons";
 }
-echo ConsClass::NAME;
-echo "<hr>";
+// echo ConsClass::NAME;
+// echo "<hr>";
 
 class DiscountedGoods{
     const NAME = "Уцененный товар интернет магазина OZON";
 }
-echo DiscountedGoods::NAME;
-echo "<hr>";
+// echo DiscountedGoods::NAME;
+// echo "<hr>";
 
+
+
+// Третье Д/З
+
+$str1 = "Today in the morning ";
+$str2 = "wos freezing ";
+$str3 = "and snowing";
+$snow = $str1 . $str2 . $str3;
+
+// echo $snow;
+
+$num1 = 11;
+$num2 = 22;
+$num1 .= $num2;
+// echo "<br>";
+// echo $num1;
+
+$text1 = "Скоро я ";
+$text2 = "буду знать ";
+$text3 = "PHP";
+// echo "<br>";
+// echo $text1, $text2, $text3;
+
+$a = 50;
+$b = 23;
+$c = 8;
+$e = 13;
+echo $a + $b;
+echo $e * $c;
+echo $b - $e;
+echo $b / $c;
+echo $b % $c;
+
+$number = 209;
+if ($number % 2) {
+    echo "Число в переменной: $number не четное";
+}else{
+    echo "Число в переменной: $number четное";
+}
 
 ?>
