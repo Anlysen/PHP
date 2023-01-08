@@ -136,17 +136,73 @@ $a = 50;
 $b = 23;
 $c = 8;
 $e = 13;
-echo $a + $b;
-echo $e * $c;
-echo $b - $e;
-echo $b / $c;
-echo $b % $c;
+//echo $a + $b;
+//echo $e * $c;
+//echo $b - $e;
+//echo $b / $c;
+//echo $b % $c;
 
 $number = 209;
 if ($number % 2) {
-    echo "Число в переменной: $number не четное";
+    //echo "Число в переменной: $number не четное";
 }else{
-    echo "Число в переменной: $number четное";
+    //echo "Число в переменной: $number четное";
 }
+
+$digit1 = 8;
+$digit2 = 4;
+$digit3 = 12;
+$digit4 = 1;
+/*
+echo ++$digit1 . "<br>";
+echo $digit2++ . "<br>";
+echo --$digit3 . "<br>";
+echo $digit4-- . "<br>";
+*/
+$abc1 = "aaa";
+$abc2 = "bbb";
+$abc3 = "ccc";
+$abc4 = "eee";
+/*
+echo ++$abc1 . "<br>";
+echo $abc2++ . "<br>";
+echo --$abc3 . "<br>";
+echo $abc4-- . "<br>";
+*/
+/*echo "<h3>Постфиксный инкремент</h3>";
+$a = 5;
+echo "Должно быть 5: " . $a++ . "<br />\n";
+echo "Должно быть 6: " . $a . "<br />\n";
+
+echo "<h3>Префиксный инкремент</h3>";
+$a = 5;
+echo "Должно быть 6: " . ++$a . "<br />\n";
+echo "Должно быть 6: " . $a . "<br />\n";
+
+echo "<h3>Постфиксный декремент</h3>";
+$a = 5;
+echo "Должно быть 5: " . $a-- . "<br />\n";
+echo "Должно быть 4: " . $a . "<br />\n";
+
+echo "<h3>Префиксный декремент</h3>";
+$a = 5;
+echo "Должно быть 4: " . --$a . "<br />\n";
+echo "Должно быть 4: " . $a . "<br />\n";
+*/
+
+
+
+
+
+$lo = 9;
+$lo1= '9';
+$ring = 4;
+$ma = "apple watch";
+$ha = "ima1c";
+
+//var_dump($lo < $ring);
+echo "<br>";
+//var_dump($ma !== $ha);
+
 
 ?>

@@ -3,13 +3,13 @@
 // Операторы
 // Конкатынация или обьединение строк
 
-$str1 = "Хорошо, что я учу";
-$str2 = "PHP";
-$num = 123;
-$num2 = 321;
+//$str1 = "Хорошо, что я учу";
+//$str2 = "PHP";
+//$num = 123;
+//$num2 = 321;
 
-$str = $str1 . $str2;
-$nums = $num2 . $num;
+//$str = $str1 . $str2;
+//$nums = $num2 . $num;
 // $num .= $num2;
 
 // echo $num2, $num, $str1, $str2;
@@ -36,11 +36,52 @@ if ($number % 2) {
 
 
 
-// Инкремент и декремент
+//Инкремент и декремент
 
-$number = 111;
-$var = 222;
+//$number = 111;
+//$var = 2;
 
+/*
 echo $number ** $var;
+echo $var . "<br>";
+++$var; префиксный
+$var++; //постфиксный 
+echo $var . "<br>";
+*/
+
+//$var1 = 1;
+//$var2 = 11;
+//префиксная форма
+//echo ++$var1 . "<br>";
+
+//постфиксная форма
+//echo $var2++ . "<br>";
+//echo $var2 . "<br>";
+
+//$abc = "bbb";
+//echo ++$abc;
+
+$number1 = 123;
+$number2 = 321;
+$number3 = 123;
+$number4 = '123';
+$str1 = "some text";
+$str2 = "new0 text";
+
+//echo $number1 > $number2; 
+//var_dump($number1 > $number2); //false
+//var_dump($number1 < $number2); //true
+//var_dump($str1 < $str2); //false
+//var_dump($number1 <= $number3); //true
+//var_dump($number1 == $number2); //оператор равенства
+//var_dump($number1 != $number2); //оператор не равенства
+//var_dump($number1 === $number4); //строгое равенство
+//var_dump($number1 !== $number4);
+
+var_dump(0 === 0); //обьекты в строгом равнении (true)
+var_dump(0 === ''); //типы данных уже не соответствуют, так как идет строка (false)
+var_dump(0 === null); //тип данных разные
+var_dump(1 != '1'); //они равны, а оператор не равенства (false)
+var_dump(1 !== '1'); //получаем (true) типы данных не соответствуют
 
 ?>
