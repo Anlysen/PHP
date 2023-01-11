@@ -192,17 +192,58 @@ echo "Должно быть 4: " . $a . "<br />\n";
 
 
 
+// Четвертое Д/З
 
-
-$lo = 9;
+$lo = 20;
 $lo1= '9';
 $ring = 4;
 $ma = "apple watch";
 $ha = "ima1c";
 
 //var_dump($lo < $ring);
-echo "<br>";
+//echo "<br>";
 //var_dump($ma !== $ha);
 
+$a1 = 9;
+//echo ++$a1;
 
+if ($lo % 73) {
+    //echo "Переменная: $lo четная";
+}else{
+    //echo "Переменная: $lo не четная";
+}
+
+
+
+
+
+
+// 5-е Д/З
+
+$time1 = 7;
+$time2 = 0;
+if($time1 == 7){
+    echo "Сейчас 7:00 утра";
+}elseif($time1 == 8){
+    echo "Сейчас 8:00 утра";
+}elseif($time1 == 10){
+    echo "Сейчас 10:00 утра"; 
+}else{
+    echo "Неизвестное время";
+}
 ?>
+<?php
+if($time1 == 7):
+?>
+<h1>Сейчас утро</h1>
+<?php
+elseif($time1 == ''):
+    ?>
+    <h2>Сейчас день</h2>
+    <?php
+    elseif($time1 == 'e'):
+        ?>
+        <h3>Сейчас вечер</h3>
+        <?php
+        endif
+        ?>
