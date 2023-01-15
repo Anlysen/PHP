@@ -97,7 +97,7 @@ if($mob == 1) {
     echo "Тебе не повезло";
 }
 */
-
+/*
 $alpha = 'b';
 if ($alpha == 'b'): 
     ?>
@@ -111,4 +111,53 @@ elseif ($alpha == 'a'):
 <h3>Обычный html h2</h3>
 <?php
 endif
+*/
+
+/*
+if($fiag1){
+    if($flag2){
+        echo "<p>Оба флага возврвщвют true</p>"; //Здесь нужно будет несколько раз вписывать else
+    }
+}
+*/
+
+$fiag1 = false;
+$flag2 = false;
+
+/*
+// пример с "и"
+if($fiag1 && $flag2){
+    echo "<p>Оба флага возврвщвют true</p>";  //Здесь достаточно один раз прописать else
+}else{
+    echo "<p>Один или оба флага возвращают false</p>";
+}
+
+// пример с "или"
+if($fiag1 || $flag2){
+    echo "<p>Оба флага возврвщвют true</p>";
+}else{
+    echo "<p>Оба флага возвращают false</p>";
+}
+*/
+
+//($content = file_get_contents("C:\Users\79896\YandexDisk\Скриншоты")) || exit('Ошибка');
+//echo $content;
+
+
+if(file_get_contents("work.txt")){
+    echo "Мы получили файл";
+}
+
+
+// Условный оператор
+// x ? y : z
+// выражение1 ? выражение2 : выражение3
+
+$x = 13;
+$x = $x > 0 ? $x = 11 : $x; // Тернарный оператор 
+echo $x;
+
+require_once '../homework/second.php'; // Указаваем на уровень директории выше ставя ../
+
+
 ?>
