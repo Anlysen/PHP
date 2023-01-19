@@ -116,7 +116,7 @@ endif
 /*
 if($fiag1){
     if($flag2){
-        echo "<p>Оба флага возврвщвют true</p>"; //Здесь нужно будет несколько раз вписывать else
+        echo "<p>Оба флага возврвщают true</p>"; //Здесь нужно будет несколько раз вписывать else
     }
 }
 */
@@ -144,7 +144,7 @@ if($fiag1 || $flag2){
 //echo $content;
 
 
-if(file_get_contents("work.txt")){
+if(file_get_contents("../homework/second.php")){ // Указаваем на уровень директории выше ставя ../
     echo "Мы получили файл";
 }
 
@@ -157,7 +157,6 @@ $x = 13;
 $x = $x > 0 ? $x = 11 : $x; // Тернарный оператор 
 echo $x;
 
-require_once '../homework/second.php'; // Указаваем на уровень директории выше ставя ../
 
 
 ?>
