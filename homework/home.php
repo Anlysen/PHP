@@ -5,9 +5,9 @@ $arr2 = array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'A
 $arr3 = array('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
 
 // Выводы элементов из массивов - 1
-echo $arr3[0]; 
-echo $arr2[1];
-echo $arr[6] . "<br>";
+echo $arr3[4]; 
+echo $arr2[7];
+echo $arr[15] . "<br>";
 
 // Выводы элементов из массивов - 2
 echo $arr3[3]; 
