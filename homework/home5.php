@@ -2,35 +2,52 @@
 
 // 1-е задание
 // Функция с глобальной переменной
+$f = 20;
+$s = 10;
 function getNums() {
+    global $f, $s;
     global $sum;
-    $sum = 20 * 10;
-    return $sum;
+    $sum = $f * $s;
 }
+getNums();
+echo $sum . "<hr>";
 
-$sum = 50;
-echo getNums() . "<hr>";
+/* В данном примере результаты глобальных переменных $f, $s и $sum
+показываются вне тела функции, но если не указать перед ними global,
+то результата вне теле мы не увидим, так, как они становятся локальными
+переменными, в таком случае нужно ставить оператор echo в теле функции */ 
 
 // 2-е задание
 // Второй раз использовать функцию
-function gotSum() {
-    $num = 30 * 10;
-    return $num;
-}
 
-$num = 650;
-echo gotSum() . "<br>";
-echo $num . "<hr>";
+
+
+
 
 // 3-е задание
 // Функция с именем и датой
-function personalInformation($name = 'Curtis',  $age = 30) {
-    $birthdate1 = '03.02.1993';
-    $date_now1 = '27.02.2023';
-}
-echo "<pre>";
-print_r(personalInformation()); 
-echo "</pre>";
+
+function personalInformation() {
+    $birth_date = mktime(10, 10, 10, 2, 3, 1993);
+    $date_full = floor((time() - $birth_date) / 60 / 60 / 24);
+    return $date_full;
+} 
+echo personalInformation(); // Выводим тоько имя функции
 echo "<hr>";
+
+/* В этой функции мы вычисляем количество прожитых месяцев и дней */
+
+
+
+
+
+// 1-й пример вычисления даты
+$now = time(); // текущее время (метка времени)
+$your_date = strtotime("2017-01-01"); // какая-то дата в строке (1 января 2017 года)
+$datediff = $now - $your_date; // получим разность дат (в секундах)
+
+echo floor($datediff / (60 * 60 * 24)); 
+echo "<hr>";
+
 
 ?>
