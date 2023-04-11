@@ -58,5 +58,27 @@ echo 'Blowfish:     ',crypt('rasmuslerdorf', '$2a$07$usesomesillystringforsalt$'
 echo 'SHA-256:      ',crypt('rasmuslerdorf', '$5$rounds=5000$usesomesillystringforsalt$'),"\n" . "<br>";
 echo 'SHA-512:      ',crypt('rasmuslerdorf', '$6$rounds=5000$usesomesillystringforsalt$'),"\n" . "<br>";
 
+// 7 lcfirst — Преобразует первый символ строки в нижний регистр
+$bar = 'HELLO WORLD';   
+$bar = lcfirst($bar);
+echo $bar . "<br>";
+
+// 8 ord — Конвертирует первый байт строки в число от 0 до 255
+$str = "\n";
+if (ord($str) == 10) {
+    echo "Первый символ \$str - перевод строки. \n" . "<br>";
+}
+
+// 9 wordwrap — Переносит строку по указанному количеству символов
+$story = 'The quick brown fox jumped over the lazy dog';
+$new_story = wordwrap($story, 10, "<br />\n") . "<br>"; // Через каждые 10 символов будет переносить строку
+echo $new_story;
+
+// 10 strtolower — Преобразует строку в нижний регистр
+$walk = 'I REALLY LOVE WALK NEAR THE WATER, LAKE OR RIVER!';
+$walk = strtolower($walk);
+echo $walk;
+
+
 
 ?>
