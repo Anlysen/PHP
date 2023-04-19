@@ -27,7 +27,7 @@ echo "<pre>";
 print_r($arr2);
 echo "</pre>";
 
-// json_decode()
+// json_decode() - позволяет разкодировать массив
 
 
 
